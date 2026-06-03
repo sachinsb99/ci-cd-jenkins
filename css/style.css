@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container { text-align: center; padding: 2rem; }
+header h1  { font-size: 2.5rem; color: #38bdf8; margin-bottom: .5rem; }
+.subtitle  { color: #94a3b8; font-size: 1.1rem; margin-bottom: 2rem; }
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  display: inline-block;
+}
+.card h2   { color: #38bdf8; margin-bottom: 1rem; }
+#timestamp { color: #64748b; font-size: .9rem; margin-top: .5rem; }

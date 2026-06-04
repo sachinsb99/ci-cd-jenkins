@@ -13,15 +13,10 @@ pipeline {
             steps {
                 sh '''
                 mkdir -p /var/www/html/static-site
-                cp -r *.html *.css /var/www/html/static-site/
+                rm -rf /var/www/html/static-site/*
+                cp -r ./* /var/www/html/static-site/
                 '''
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Deployment completed successfully.'
         }
     }
 }

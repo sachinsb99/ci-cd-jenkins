@@ -12,8 +12,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                sudo mkdir -p /var/www/html/static-site
-                sudo cp -r *.html *.css /var/www/html/static-site/
+                mkdir -p /var/www/html/static-site
+                cp -r *.html *.css /var/www/html/static-site/
                 '''
             }
         }
